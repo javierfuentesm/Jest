@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-jest": "^24.9.0",
+    "@babel/core": "7.7.5",
+    "@babel/preset-env": "7.7.6",
+    "babel-jest": "24.9.0",
     "babel-polyfill": "^6.26.0",
     "jest": "^24.9.0"
   }
