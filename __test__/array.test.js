@@ -7,7 +7,10 @@ describe("Comprobaremos que existe un elemtno", () => {
   test("¿No contiene una banana? ", () => {
     expect(arrayFruits()).not.toContain("banana");
   });
-  test("Comprobar tamañoa de un arreglo? ", () => {
+  test("Comprobar tamaño de un arreglo? ", () => {
     expect(arrayFruits()).toHaveLength(6);
+  });
+  test("Comprobar que existe algun color? ", () => {
+    expect(arrayColors()).toContain("azul");
   });
 });
