@@ -11,4 +11,12 @@ describe("Testing using promises with async/await", () => {
     );
     expect(name).toEqual("Rick Sanchez");
   });
+  test('Respuestas de API',async () => {
+   try {
+      // Sabemos que esta request va a devolver un error 500, entonces va a ejecutar el catch con el error.
+      await getDataFromApi(`http://httpstat.us/500`);
+    } catch(error) {
+      expect(error).toEqual(new Error('Request failed with status code 500'));
+    }
+  });
 });
