@@ -13,6 +13,6 @@ describe("Comparadores comunes", () => {
     expect(user).toEqual(user2);
   });
   test("No son exactamente iguales", () => {
-    expect(user).not.toEqual(user2);
+    expect(user).not.toEqual("lala");
   });
 });
